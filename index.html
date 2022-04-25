@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lightgray: 'hsl(212, 45%, 89%)',
+            grayishblue: 'hsl(220, 15%, 55%)',
+            darkblue: 'hsl(218, 44%, 22%)'
+          },
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <title>QR CODE | FrontendMentor</title>
+</head>
+<body>
+  <div class="min-h-screen bg-lightgray flex justify-center items-center">
+    <div class="flex flex-col mx-5 shadow-lg max-w-xl bg-white p-4 rounded-xl">
+      <div class="w-72 h-72">
+        <img src="./images/image-qr-code.png" class="h-fit rounded-xl">
+      </div>
+
+      <div class="font-outfit font-bold text-center mt-5 text-xl">
+        <span class="block">Improve your front-end</span>
+        <span class="block">skills by building projects</span>
+      </div>
+
+      <div class="font-outfit font-normal text-center mt-5 text-md text-grayishblue pb-5">
+        <span class="block">Scan the QR code to visit Frontend</span>
+        <span class="block">Mentor and take your coding skills to</span>
+        <span class="block">the next level</span>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
